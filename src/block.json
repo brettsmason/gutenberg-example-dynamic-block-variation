@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/example-dynamic",
+	"version": "0.1.0",
+	"title": "Example Dynamic",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "example-dynamic",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"variations": [
+		{
+			"name": "example-dynamic-variation",
+			"title": "Example Dynamic - Variation",
+			"icon": "no",
+			"category": "widgets",
+			"description": "Example block scaffolded with Create Block tool - variation.",
+			"attributes": {
+				"isVariation": true
+			},
+			"isActive": ["isVariation"]
+		}
+	]
+}
