@@ -14,6 +14,16 @@
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
+	"attributes": {
+		"columns": {
+			"type": "integer",
+			"default": 2
+		},
+		"isVariation": {
+			"type": "boolean",
+			"default": false
+		}
+	},
 	"variations": [
 		{
 			"name": "example-dynamic-variation",
@@ -22,7 +32,8 @@
 			"category": "widgets",
 			"description": "Example block scaffolded with Create Block tool - variation.",
 			"attributes": {
-				"isVariation": true
+				"isVariation": true,
+				"columns": 4
 			},
 			"isActive": ["isVariation"]
 		}
